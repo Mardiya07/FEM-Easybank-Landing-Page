@@ -1,0 +1,143 @@
+:root{
+--Light-Font:300;
+--Regular-Font:400;
+--Bold-Font:700;
+--Line-height:2rem;
+
+--Grayish-Blue:hsl(233, 8%, 62%);
+--Light-Grayish-Blue:hsl(220, 16%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+--Dark-Blue: hsl(233, 26%, 24%);
+--Lime-Green: hsl(136, 65%, 51%);
+--Bright-Cyan: hsl(192, 70%, 51%);
+}
+*{
+    font-family: 'Public Sans', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+padding: 0;
+margin: 0;
+font-size: 10px;
+/* border: 1px solid red; */
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1.5rem 2rem;
+    position: sticky;
+    
+}
+.menuToggler{
+    display: flex;
+    align-items: center;
+}
+.sideNav{
+    position: absolute;
+    padding: 1.5rem 0;
+    width: 80%;
+    background-color:var(--White);
+    top: 1.5rem;
+    color: var(--Dark-Blue);
+    display: none;
+}
+.sideNav_Items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none
+
+}
+.sideNav_Item{
+    padding: .8rem;
+    font-size: var(--Regular-Font);
+    font-size: 1.4rem;
+
+}
+.introImageContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* .mockupcontainer{
+    position:absolute;
+    z-index: 2;
+    top: 0;
+    height: 30rem;
+} */
+.introImage{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+/* .introImage::after{
+    content: " ";
+    background: url('./images/image-mockups.png');
+    z-index: 50;
+    top: -5rem;
+    height: 80%;
+    width: 80%;
+
+} */
+.imageMockup{
+    position: absolute;
+    top: 0rem;
+    left:4rem;
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+.introTextContainer{
+    padding: 1rem 2rem 7rem 2rem;
+    
+}
+.introTextContainer h1{
+   font-size: 3.5rem;
+   font-weight: var(--Regular-Font); 
+   color: var(--Dark-Blue);
+   padding: .5rem;
+}
+.introTextContainer p{
+font-size: 1.3rem;
+padding: 2rem 0 2.5rem 0;
+color: var(--Grayish-Blue);
+line-height: var(--Line-height);
+}
+.requestInviteBtn{
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+    border-style: none;
+    border-radius: 2rem;
+    color: var(--White);
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+.bankServices{
+    padding: 4rem 2rem;
+    background-color: var(--Very-Light-Gray);
+}
+.whyUs{
+    font-size:3rem ;
+    padding: 1rem 0;
+    font-weight: var(--Light-Font);
+    color: var(--Dark-Blue);
+}
+.service{
+    font-size: 1.6rem;
+    font-weight: var(--Light-Font);
+    padding: 1rem 0;
+    color: var(--Dark-Blue);
+}
+.serviceBody{
+    color: var(--Grayish-Blue);
+    font-size: 1.3rem;
+    line-height: var(--Line-height);
+}
