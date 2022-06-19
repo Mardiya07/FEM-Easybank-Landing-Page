@@ -1,72 +1,80 @@
-:root{
---Light-Font:300;
---Regular-Font:400;
---Bold-Font:700;
---Line-height:2rem;
+:root {
+  --Light-Font: 300;
+  --Regular-Font: 400;
+  --Bold-Font: 700;
+  --Line-height: 2rem;
 
---Grayish-Blue:hsl(233, 8%, 62%);
---Light-Grayish-Blue:hsl(220, 16%, 96%);
---Very-Light-Gray: hsl(0, 0%, 98%);
---White: hsl(0, 0%, 100%);
---Dark-Blue: hsl(233, 26%, 24%);
---Lime-Green: hsl(136, 65%, 51%);
---Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
 }
-*{
-    font-family: 'Public Sans', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
-padding: 0;
-margin: 0;
-font-size: 10px;
-/* border: 1px solid red; */
+* {
+  font-family: "Public Sans", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  /* border: 1px solid red; */
 }
-main{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+.appWrapper {
+  margin: 0 auto;
 }
-.navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:1.5rem 2rem;
-    position: sticky;
-    
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.menuToggler{
-    display: flex;
-    align-items: center;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  background-color: var(--Very-Light-Gray);
 }
-.sideNav{
-    position: absolute;
-    padding: 1.5rem 0;
-    width: 80%;
-    background-color:var(--White);
-    top: 1.5rem;
-    color: var(--Dark-Blue);
-    display: none;
+.menuToggler {
+  display: flex;
+  align-items: center;
 }
-.sideNav_Items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none
+.sideNav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 0;
+  width: 80%;
+  background-color: var(--White);
+  top: 1.5rem;
+  color: var(--Dark-Blue);
+  display: none;
+}
+.sideNav_Items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.sideNav_Item {
+  padding: 0.8rem;
+  font-size: var(--Regular-Font);
+  font-size: 1.4rem;
+}
 
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Very-Light-Gray);
 }
-.sideNav_Item{
-    padding: .8rem;
-    font-size: var(--Regular-Font);
-    font-size: 1.4rem;
-
-}
-.introImageContainer{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.heroImgWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 /* .mockupcontainer{
     position:absolute;
@@ -74,10 +82,10 @@ main{
     top: 0;
     height: 30rem;
 } */
-.introImage{
-    height: 80%;
-    width: 100%;
-    object-fit: cover;
+.heroImage {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
 }
 /* .introImage::after{
     content: " ";
@@ -88,56 +96,88 @@ main{
     width: 80%;
 
 } */
-.imageMockup{
-    position: absolute;
-    top: 0rem;
-    left:4rem;
-    height: 80%;
-    width: 80%;
-    object-fit: cover;
+.imageMockup {
+  position: absolute;
+  top: 0rem;
+  left: 4rem;
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
 }
-.introTextContainer{
-    padding: 1rem 2rem 7rem 2rem;
-    
+.heroTextWrap {
+  padding: 1rem 2rem 7rem 2rem;
+  text-align: center;
 }
-.introTextContainer h1{
-   font-size: 3.5rem;
-   font-weight: var(--Regular-Font); 
-   color: var(--Dark-Blue);
-   padding: .5rem;
+.heroTextWrap h1 {
+  font-size: 3.5rem;
+  font-weight: var(--Regular-Font);
+  color: var(--Dark-Blue);
+  padding: 0.5rem;
 }
-.introTextContainer p{
-font-size: 1.3rem;
-padding: 2rem 0 2.5rem 0;
-color: var(--Grayish-Blue);
-line-height: var(--Line-height);
+.heroTextWrap p {
+  font-size: 1.3rem;
+  padding: 2rem 0 2.5rem 0;
+  color: var(--Grayish-Blue);
+  line-height: var(--Line-height);
 }
-.requestInviteBtn{
-    font-size: 1.3rem;
-    padding: 1rem 3rem;
-    border-style: none;
-    border-radius: 2rem;
-    color: var(--White);
-    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+.requestInviteBtn {
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+  border-style: none;
+  border-radius: 2rem;
+  color: var(--White);
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
 }
-.bankServices{
-    padding: 4rem 2rem;
-    background-color: var(--Very-Light-Gray);
+.bankServicesSection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Light-Grayish-Blue);
+  border: 1px solid;
 }
-.whyUs{
-    font-size:3rem ;
-    padding: 1rem 0;
-    font-weight: var(--Light-Font);
-    color: var(--Dark-Blue);
+
+.bankServicesWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  background-color: var(--Light-Grayish-Blue);
 }
-.service{
-    font-size: 1.6rem;
-    font-weight: var(--Light-Font);
-    padding: 1rem 0;
-    color: var(--Dark-Blue);
+.whyUs {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-weight: var(--Light-Font);
+  color: var(--Dark-Blue);
 }
-.serviceBody{
-    color: var(--Grayish-Blue);
-    font-size: 1.3rem;
-    line-height: var(--Line-height);
+.service {
+  font-size: 1.6rem;
+  font-weight: var(--Light-Font);
+  padding: 1rem 0;
+  color: var(--Dark-Blue);
+}
+.serviceBody {
+  color: var(--Grayish-Blue);
+  font-size: 1.3rem;
+  line-height: var(--Line-height);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 468px) {
+  .appWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid red;
+  }
 }
