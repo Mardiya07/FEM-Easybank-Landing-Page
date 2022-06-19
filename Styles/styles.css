@@ -136,7 +136,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--Light-Grayish-Blue);
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .bankServicesWrap {
